@@ -1,4 +1,3 @@
-#!/c/Program\ Files/Racket/Racket
 #lang racket
 
 (1 2 3 4)
