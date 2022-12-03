@@ -6,6 +6,8 @@
     (+ 1 (my-len (cdr lst)))
 ))
 
+;;--- TESTCASES ---;;
+
 (my-len '())
 ; 0
 (my-len '(1 2 3 4))

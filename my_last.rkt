@@ -6,6 +6,8 @@
     (my-last (cdr lst))
 ))
 
+;;--- TESTCASES ---;;
+
 (my-last '(1 2 3 4 5))
 ; 5
 (my-last '(1 (2 3)))
