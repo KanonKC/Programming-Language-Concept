@@ -41,10 +41,10 @@ myproduct [] = 1
 myproduct (x:xs) = x * (myproduct xs)
 
 myelem y [] = False
-myelem y (x:xs) = (y == x) || myelem y xs
+myelem y (x:xs) = (y == x) || myelem y xs -- Proudly present!
 
 mymax [] = -99999
-mymax (x:xs) = if x > mymax xs
+mymax (x:xs) = if x > mymax xs -- Time complexity? >:/
     then x
     else mymax xs
 
