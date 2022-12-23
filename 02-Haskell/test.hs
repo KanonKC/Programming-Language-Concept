@@ -43,8 +43,10 @@ myproduct (x:xs) = x * (myproduct xs)
 myelem y [] = False
 myelem y (x:xs) = (y == x) || myelem y xs
 
--- mymax [] =
--- mymax (x:xs) = 
+mymax [] = -99999
+mymax (x:xs) = if x > mymax xs
+    then x
+    else mymax xs
 
 mymax_lg [] = -99999
 mymax_lg (x:xs) = larger x (mymax_lg xs)
